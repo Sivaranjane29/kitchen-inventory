@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021.
+  -->
+
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/roboto_slab</item>
+        <item>@font/roboto_slab_light</item>
+        <item>@font/roboto_slab_thin</item>
+        <item>@font/rosario</item>
+        <item>@font/titillium_web</item>
+    </array>
+</resources>

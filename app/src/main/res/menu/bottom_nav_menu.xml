@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_recipe"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Menu" />
+
+    <item
+        android:id="@+id/navigation_favourite"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:iconTint="@color/black"
+        android:title="@string/title_recipe" />
+
+    <item
+        android:id="@+id/navigation_feed"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="ROL" />
+
+    <item
+        android:id="@+id/navigation_for_you"
+        android:icon="@drawable/baseline_shopping_cart_black_24dp"
+        android:title="Cart" />
+
+
+</menu>

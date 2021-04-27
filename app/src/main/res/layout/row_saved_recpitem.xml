@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnrLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ItemName"
+                android:fontFamily="@font/titillium_web"
+                android:textSize="18sp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCalorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:text="Calorie"
+                android:textColor="@color/primaryLightColor"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="end|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:text="Unit"
+                android:textColor="@color/primaryLightColor"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:text="Quantity"
+                android:textColor="@color/primaryLightColor"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:orientation="vertical" />
+</LinearLayout>

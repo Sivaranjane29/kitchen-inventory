@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2021.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_corner"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Report Filter"
+        android:textAlignment="center"
+        android:fontFamily="@font/titillium_web"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="From date"
+        android:fontFamily="@font/titillium_web"
+        android:textColor="@color/primaryDarkColor" />
+
+    <TextView
+        android:id="@+id/txtFrmDt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/titillium_web"
+        android:background="@drawable/background_date"
+        android:hint="To date"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:fontFamily="@font/titillium_web"
+        android:text="To date"
+        android:textColor="@color/primaryDarkColor" />
+
+    <TextView
+        android:id="@+id/txtToDt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/titillium_web"
+        android:background="@drawable/background_date"
+        android:hint="To date"
+        android:padding="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/titillium_web"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/titillium_web"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/primaryColor"
+            android:gravity="center"
+            android:text="Search" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

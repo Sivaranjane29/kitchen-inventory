@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2021.
+  -->
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/crdLayout"
+    android:layout_width="200dp"
+    android:layout_height="260dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="260dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtNa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/baseline_access_time_red_400_24dp"
+                android:fontFamily="@font/roboto_slab"
+                android:gravity="center_vertical"
+                android:drawablePadding="3dp"
+                android:padding="10dp"
+                android:text="5d" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></CheckBox>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/food" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_slab"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Item Name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtAddQty"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/light_gray"
+                    android:fontFamily="@font/titillium_web"
+                    android:text="Add"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="5dp"
+                    app:elevation="10dp" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/shimmerGrey"
+                    android:orientation="vertical" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtMinusQty"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/titillium_web"
+                    android:gravity="center"
+                    android:text="Minus"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="5dp"
+                    app:elevation="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

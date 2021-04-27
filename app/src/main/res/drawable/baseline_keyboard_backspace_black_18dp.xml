@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2021.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="18dp" android:tint="#000000" android:viewportHeight="24.0" android:viewportWidth="24.0" android:width="18dp">
+    <path android:fillColor="@android:color/white" android:pathData="M21,11H6.83l3.58,-3.59L9,6l-6,6 6,6 1.41,-1.41L6.83,13H21z"/>
+</vector>

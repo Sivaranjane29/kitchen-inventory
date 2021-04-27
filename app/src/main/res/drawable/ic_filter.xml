@@ -1,0 +1,8 @@
+<!--
+  ~ Copyright (c) 2021.
+  -->
+
+<vector android:height="24dp" android:viewportHeight="50"
+    android:viewportWidth="50" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#FFFFFF" android:pathData="M4,2C3.3984,2 3,2.3984 3,3L3,6C3,6.3008 3.1133,6.4883 3.3125,6.6875L19.3125,23.6875C19.5117,23.8867 19.8008,24 20,24L30,24C30.3008,24 30.4883,23.8867 30.6875,23.6875L46.6875,6.6875C46.8867,6.4883 47,6.3008 47,6L47,3C47,2.3984 46.6016,2 46,2ZM19,26L19,41C19,41.3984 19.1992,41.707 19.5,41.9063L29.5,47.9063C29.6016,48.0078 29.8008,48 30,48C30.1992,48 30.3008,48.0078 30.5,47.9063C30.8008,47.707 31,47.3984 31,47L31,26Z"/>
+</vector>

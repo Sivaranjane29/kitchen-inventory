@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2021.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnrLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingTop="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:padding="5dp"
+                android:text="Name"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCalorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:padding="5dp"
+                android:text="Calorie"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtExpiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:padding="5dp"
+                android:text="ExpiryDate"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight=".5"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:padding="5dp"
+                android:text="Qty"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtUnitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/titillium_web"
+                android:padding="5dp"
+                android:text="Unit"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="12sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/light_gray"
+                android:elevation="30dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtAddQty"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/light_gray"
+                        android:fontFamily="@font/titillium_web"
+                        android:text="Add"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="5dp"
+                        app:elevation="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shimmerGrey"
+                        android:orientation="vertical" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtMinusQty"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/titillium_web"
+                        android:gravity="center"
+                        android:text="Minus"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="5dp"
+                        app:elevation="10dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This item expire soon "
+        android:padding="5dp"
+        android:visibility="gone"
+        android:drawablePadding="10dp"
+        android:gravity="bottom|left"
+        android:drawableStart="@drawable/baseline_warning_green_500_18dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:orientation="vertical" />
+</LinearLayout>

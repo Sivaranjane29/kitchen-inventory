@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kitcheninventory">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.recipe.RecipeGridList" />
+        <activity android:name=".activity.recipe.RecipeView" />
+        <activity
+            android:name=".Bottom_Menu"
+            android:label="@string/title_activity_bottom__menu" />
+        <activity android:name=".activity.report.purchase.PurchaseSummary" />
+        <activity android:name=".activity.report.purchase.Re_PurchaseDetails" />
+        <activity
+            android:name=".activity.starting.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.auth.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.masters.menu.AddMenu" />
+        <activity android:name=".activity.masters.menu.MenuList" />
+        <activity android:name=".activity.masters.sup.SupplierList" />
+        <activity android:name=".activity.masters.sup.AddSupplier" />
+        <activity android:name=".activity.masters.unit.UnitList" />
+        <activity android:name=".activity.masters.unit.AddUnit" />
+        <activity android:name=".activity.masters.item.ItemList" />
+        <activity android:name=".activity.masters.item.AddItem" />
+        <activity android:name=".activity.masters.cat.CategoryList" />
+        <activity android:name=".activity.masters.cat.AddCategory" />
+        <activity android:name=".activity.recipe.RecipeIngredient" />
+        <activity android:name=".activity.recipe.RecipeList" />
+        <activity android:name=".activity.purchase.Purchase" />
+        <activity android:name=".activity.purchase.PurchaseDetails" />
+        <activity android:name=".activity.report.Stock" />
+        <activity android:name=".activity.daily.DailyRecipe" />
+        <activity android:name=".activity.dailyconsumption.DailyConsumption" />
+        <activity android:name=".activity.report.DailyReport" />
+        <activity android:name=".activity.history.History" />
+        <activity android:name=".activity.recipe.IngredientsList" />
+        <activity android:name=".activity.masters.menu.MenuRecipeList" />
+        <activity android:name=".activity.recipe.AddNewRecipe" />
+        <activity android:name=".activity.shopthings.MarketList" />
+        <activity android:name=".activity.shopthings.ShopItem" />
+        <activity android:name=".activity.video.VideoDetails" />
+        <activity android:name=".activity.myprofile.MyProfile" />
+        <activity android:name=".activity.report.RolReport" />
+        <activity android:name=".activity.masters.shop.ShopAdd" />
+        <activity
+            android:name=".activity.search.Search"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

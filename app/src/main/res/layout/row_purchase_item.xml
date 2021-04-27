@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2021.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnrLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingTop="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:fontFamily="@font/titillium_web"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCalorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calorie"
+                android:fontFamily="@font/titillium_web"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txtExpiryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ExpiryDate"
+                android:fontFamily="@font/titillium_web"
+                android:visibility="gone"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight=".4"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty"
+                android:textColor="@color/primaryLightColor"
+                android:fontFamily="@font/titillium_web"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtUnitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit"
+                android:fontFamily="@font/titillium_web"
+                android:textColor="@color/primaryLightColor"
+                android:textSize="10sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRemove"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight=".5"
+                android:backgroundTint="@android:color/white"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/primaryColor"
+                android:fontFamily="@font/titillium_web"
+                android:text="Remove"
+                android:textColor="@color/primaryColor"
+                android:textSize="10sp"
+                app:cornerRadius="5dp"
+                app:elevation="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        android:orientation="vertical" />
+</LinearLayout>
